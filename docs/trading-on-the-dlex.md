@@ -63,6 +63,7 @@ Fees on the DLEX are designed to reward LPs and ensure sustainability:
 | Liquidation Premium/Discount | Applied during forced closures, scaling with price deviation           |
 | Funding Payments          | Continuous rebalancing paid between longs/shorts via utilization curve   |
 | Exit Fee (if applicable)  | Used to discourage short-term farming and reward longer-term liquidity   |
+| Origination fee           | One-time 5 bps fee on debts (applied on borrow/increase) to prevent potential griefing with small amounts |
 
 
 
