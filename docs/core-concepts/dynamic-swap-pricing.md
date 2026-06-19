@@ -15,16 +15,15 @@ In the case that asset $X$ is depleting we modify the value being used in $X\cdo
 $$
 \begin{equation*}
 X_A = 
-  \begin{cases}
-    X 
+  \begin{cases}     
+    \frac{X - X_M}{1-B} 
+      & \text {if } X 
+      & < \frac{X_M}{B}   
+\\
+    X
       & \text{if } \frac{X_M}{B}  
       & \le X 
-      & \le \frac{k \cdot B}{Y_M}   
-\\
-    \frac{X - X_M}{1-B} 
-      & \text {if } X_M
-      & < X 
-      & < \frac{X_M}{B} 
+      & \le \frac{k \cdot B}{Y_M}
 \\
     \frac{X}{(1-B) + \frac{Y_M\cdot X}{k}}
       & \text{if } \frac{k \cdot B}{Y_M}
